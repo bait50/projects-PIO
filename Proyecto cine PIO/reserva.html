@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reserva</title>
     <link rel="stylesheet" href="Styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -13,14 +14,46 @@
             <ul>
                 <li><a href="Index.html">Inicio</a></li>
                 <li><a href="Cartelera.html">Cartelera</a></li>
-                <li><a href="reserva.html">Reserva</a></li>
                 
             </ul>
         </nav>
     </header>
 
     <section id="reserva">
-        <form ></form>
+        <h2>Reserva tu Boleto</h2>
+        <form action="en proceso" method="post">
+            <!-- Selección de película -->
+            <label for="pelicula">Película:</label>
+            <input type="text" id="pelicula" name="pelicula" readonly>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="horario">Selecciona tu horario:</label>
+            <select id="horario" name="horario" required>
+            <option value="" disabled>Selecciona un horario</option>
+            <option value="15:00">15:00</option>
+            <option value="18:00">18:00</option>
+            <option value="21:00">21:00</option>
+            </select>
+
+            
+            <label for="cantidad">Cantidad de boletos:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+
+            <!-- Selección de asientos -->
+            <label for="asientos">Selecciona tus asientos:</label>
+            <input type="text" id="asientos" name="asientos" placeholder="Ej. A1, A2, A3" required>
+
+            <!-- Botón de envío -->
+            <input type="submit" value="Reservar">
+        </form>
+        
+        <!-- Información de la película -->
+        <h3>Detalles de la película:</h3>
+        <p id="genero"></p>
+        <p id="duracion"></p>
+        <p id="calificacion"></p>
+        <p id="horarios"></p>
     </section>
 
     <footer>

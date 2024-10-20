@@ -1,5 +1,17 @@
 /*donde le daremos estilo a nuestra pagina*/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif; 
+}
+
+
+
 nav ul li a {
     display:block;
     text-align: center;
@@ -18,38 +30,191 @@ nav ul li a:hover {
 
 h1 {
     text-align: center;
+    color: #fff;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-} 
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#Cartelera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Alinea el contenido horizontalmente */
+    margin: 20px auto; /* Centra la sección en la página */
+    max-width: 1200px; /* Limita el ancho de la sección */
+}
 
 .pelicula {
-    display: inline-block;
-    border: 1px solid #ddd;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 300px; /* Ancho de cada tarjeta de película */
+    transition: transform 0.2s; /* Añade una animación suave al pasar el mouse */
+}
+
+.pelicula:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
 }
 
 .pelicula img {
-    width: 510%;
+    max-width: 100%; /* Hace que la imagen se ajuste al ancho de la tarjeta */
+    border-radius: 8px; /* Añade esquinas redondeadas a la imagen */
 }
-.pelicula:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+
+h3 {
+    margin: 10px 0; /* Espacio arriba y abajo del título */
+    color: #333;
 }
+
+button {
+    background-color: #28a745; /* Color verde para el botón */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#destacados {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+#destacados h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.peliculas-destacadas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pelicula {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pelicula img {
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pelicula h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.pelicula p {
+    color: #666;
+}
+
+#reserva {
+    background-color: white; /* Fondo blanco para la sección de reserva */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centramos la sección */
+    max-width: 600px; /* Ancho máximo para la sección de reserva */
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], 
+input[type="date"], 
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #28a745; /* Color verde para el botón */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Espacio superior para separar del resto del formulario */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+

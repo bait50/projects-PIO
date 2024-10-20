@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartelera</title>
     <link rel="stylesheet" href="Styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header >
@@ -13,38 +14,73 @@
             <ul>
                 <li><a href="Index.html">Inicio</a></li>
                 <li><a href="Cartelera.html">Cartelera</a></li>
-                <li><a href="reserva.html">Reserva</a></li>
             </ul>
         </nav>
     </header>
-        <section id="Cartelera">
-            <h2>peliculas disponibles para ver</h2>
-            
-            <div class="pelicula">
-                <h3>JOKER 2: FOLIE à DEUX</h3>
-                <img src="img/joker2.jpg" alt="Descripción">
-                <p>Horarios: 15:00, 18:00, 21:00</p>
-                <button id="btnReservar">Reservar</button>
-            </div>
-            <div class="pelicula">
-                <h3>Deadpool & Wolverine</h3>
-                <img src="img/deadpoolandwolverine_lob_crd_03.jpg" alt="Descripción">
-                <p>Horarios: 15:00, 18:00, 21:00</p>
-                <button id="btnReservar">Reservar</button>
-            </div>
-            <div class="pelicula">
-                <h3>Beetlejuice 2</h3>
-                <img src="img/peli3.jpg" alt="Descripción">
-                <p>Horarios: 15:00, 18:00, 21:00</p>
-                <button id="btnReservar">Reservar</button>
-            </div>
-            <div class="pelicula">
-                <h3>EL reino animal</h3>
-                <img src="img/peli2.jpg" alt="Descripción">
-                <p>Horarios: 15:00, 18:00, 21:00</p>
-                <button id="btnReservar">Reservar</button>
-            </div>
-        </section>
+    <section id="Cartelera">
+    <h2>Películas disponibles para ver</h2>
+    
+    <div class="pelicula">
+        <h3>JOKER 2: FOLIE à DEUX</h3>
+        <img src="img/joker2.jpg" alt="Descripción de la imagen de Joker 2">
+        <p><strong>Género:</strong> Drama, Musical</p>
+        <p><strong>Duración:</strong> 2h 15min</p>
+        <p><strong>Calificación:</strong> 8.5/10</p>
+        <p><strong>Horarios:</strong> 15:00, 18:00, 21:00</p>
+        <button onclick="redirigirAReserva('JOKER 2: FOLIE à DEUX')">Reservar</button>
+    </div>
+
+    <div class="pelicula">
+        <h3>Deadpool & Wolverine</h3>
+        <img src="img/deadpoolandwolverine_lob_crd_03.jpg" alt="Descripción de la imagen de Deadpool y Wolverine">
+        <p><strong>Género:</strong> Acción, Comedia</p>
+        <p><strong>Duración:</strong> 1h 58min</p>
+        <p><strong>Calificación:</strong> 9.0/10</p>
+        <p><strong>Horarios:</strong> 15:00, 18:00, 21:00</p>
+        <button onclick="redirigirAReserva('Deadpool & Wolverine')">Reservar</button>
+    </div>
+
+    <div class="pelicula">
+        <h3>Beetlejuice 2</h3>
+        <img src="img/peli3.jpg" alt="Descripción de la imagen de Beetlejuice 2">
+        <p><strong>Género:</strong> Comedia, Fantasía</p>
+        <p><strong>Duración:</strong> 1h 45min</p>
+        <p><strong>Calificación:</strong> 7.8/10</p>
+        <p><strong>Horarios:</strong> 15:00, 18:00, 21:00</p>
+        <button onclick="redirigirAReserva('Beetlejuice 2')">Reservar</button>
+    </div>
+
+    <div class="pelicula">
+        <h3>EL reino animal</h3>
+        <img src="img/peli2.jpg" alt="Descripción de la imagen de El reino animal">
+        <p><strong>Género:</strong> Drama, Aventura</p>
+        <p><strong>Duración:</strong> 2h 10min</p>
+        <p><strong>Calificación:</strong> 8.0/10</p>
+        <p><strong>Horarios:</strong> 15:00, 18:00, 21:00</p>
+        <button onclick="redirigirAReserva('EL reino animal')">Reservar</button>
+    </div>
+
+    <div class="pelicula">
+        <h3>El juego del año</h3>
+        <img src="img/peli4.jpg" alt="Descripción de la imagen de El juego del año">
+        <p><strong>Género:</strong> Suspenso, Thriller</p>
+        <p><strong>Duración:</strong> 1h 50min</p>
+        <p><strong>Calificación:</strong> 7.5/10</p>
+        <p><strong>Horarios:</strong> 15:00, 18:00, 21:00</p>
+        <button onclick="redirigirAReserva('El juego del año')">Reservar</button>
+    </div>
+
+    <div class="pelicula">
+        <h3>El hombre de las montañas</h3>
+        <img src="img/peli5.jpg" alt="Descripción de la imagen de El hombre de las montañas">
+        <p><strong>Género:</strong> Aventura, Biografía</p>
+        <p><strong>Duración:</strong> 2h 20min</p>
+        <p><strong>Calificación:</strong> 7.9/10</p>
+        <p><strong>Horarios:</strong> 15:00, 18:00, 21:00</p>
+        <button onclick="redirigirAReserva('El hombre de las montañas')">Reservar</button>
+    </div>
+
+</section>
         <footer>
             <p>© 2024 Cine PIO - Todos los derechos reservados</p>
             <ul>
